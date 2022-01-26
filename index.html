@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <script type="text/javascript">
         function genQR()
         {
@@ -16,7 +15,7 @@
             var myimg=document.getElementById("img");
             var mytext=document.getElementById("qrtext").value;
             var mysize=document.getElementById("size").value;
-            
+
             if (mytext!=="" && mysize=="100")
             {
                 myimg.src=gapi+"100x100"+"&chl="+mytext;
@@ -50,15 +49,12 @@
             }
         
         }
-
-        
-
     </script>
- 
     <div class="grid">
         <h2 align="center">Qr Code Generator</h2>
         <center>
         <img src="" id="img"></center>
+
         <select id="size">
             <option value="100">100x100</option>
             <option value="150">150x150</option>
@@ -71,15 +67,9 @@
         <br><br>
         <input type="submit" value="Generate" onclick="genQR()">
 
-        <p><a href="https://github.com/Script-Kiddie-JKB">Developed By Script-Kiddie-JKB!</a></p>
-
-        <div class="bg"></div>
-
-        <div class="star-field">
-        <div class="layer"></div>
-        <div class="layer"></div>
-        <div class="layer"></div>
-      
+        <p><a href="https://github.com/Script-Kiddie-JKB">Developed By Script-Kiddie-JKB!</a></P>
+        
+        
     </div>
 </body>
 </html>
